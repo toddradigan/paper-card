@@ -135,6 +135,7 @@ Custom property | Description | Default
           placeholder="[[placeholderImage]]"
           position="[[positionImage]]"
           preload="[[preloadImage]]"
+          sizing="[[sizingImage]]"
           fade="[[fadeImage]]"></iron-image>
       <div hidden$="[[!heading]]" class$="[[_computeHeadingClass(image)]]">[[heading]]</div>
     </div>
@@ -180,6 +181,15 @@ Custom property | Description | Default
         preloadImage: {
           type: Boolean,
           value: false
+        },
+
+        /**
+         * This sizing value will be passed to the iron-image, to be used
+         * to size the header image according to iron-image rules
+         */
+        sizingImage: {
+          type: String,
+          value: null
         },
 
         /**
